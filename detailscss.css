@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+ /* added a color  to whole body */
+body{
+  background-color: #323D48;
+}
+ /* hiden student details for each card*/
+.namehide{
+display: none;
+}
+
+
+ /* this container sets the display type to grid so everything is inline and in columns, i have centred alll items and content to centre
+ and setted the columns width and gaps for each card, also given full 100 porcent width and height so it cover the entire screen */
+.container {
+
+  display: grid;
+  font-family: 'Baloo Paaji 2', cursive;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-gap: 60px;
+  height: 100vh;
+  width: 100%;
+}
+
+ /* card layout,this is set to automatically arrange the  items inside the card, and give it an automatic height depending on whatever is inside the cards container
+ also i have added a box shadow effect,this box shadow adds effects to all 4 sides. */
+.card {
+ color: white;
+  flex-direction: column;
+  align-items: center;
+   height: auto;
+  border-radius: 40px;
+  display: flex;
+  background-color: #616E88;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.7);
+  moz-box-shadow: 0 0 60px  rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0 0 60px  rgba(0,0,0,0.7);
+  -o-box-shadow: 0 0 60px  rgba(0,0,0,0.7);
+}
+ /* name div containing thesize and  weight of studet details */
+.name {
+  font-size: 25px;
+  font-weight: 650;
+}
+ /*  here i set and add round borders with a set height and width to the pictures   */
+.cardimage {
+ 
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  border: 3px solid #1E3159;
+  margin-top: 20px;
+  box-shadow: 0 10px 55px #7AC6DD;
+}
+
+
+ /*  this just adds colored borders to the pictures and adds a shadow to thepcitures which blend out.   */
+.draw-border {
+  position: relative;
+   color: #7AC6DD;
+  box-shadow: inset 0 0 0 4px #7AC6DD;
+}
+
+
+ /* here im just setting up the buttons  */
+.btn {
+ 
+  font:'Roboto Slab', sans-serif;
+  font-size: 18px;
+  padding: 0.75em 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  margin: 1rem;
+  width: 13rem;
+}
+
+ /* here im seetting and adjusting and placing the icons, also i have given them a linear gradient background color, which applies a mix of tones.  */
+.fa {
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 100%;
+  padding: 10px;
+  width: 20px;
+  border-radius: 50%;
+   background: linear-gradient(45deg, #ff003c, #c648c8);
+
+}
+
+
+
+
+
+/* herei have setted the student information to  show up when its hoovered*/
+.card:hover .namehide {
+   display: block;
+   
+}
+
+/* when the card hoovered i increas the size of the card by 15% , and add some shadow effects*/
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+
+   
+}
+
+/* here i add the transaction effect to the card for when is hoovered*/
+.card {
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* this is amrits code which i have added bits , but mainly i had to change my css styling as it was not designed to work with my styling, 
+i could hvae made my own heading but i wanted the website to have similar pages  */
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font: bolder;
+    font-size: 1.2em;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    text-align: : left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    margin: auto;
+    background: rgba(0,0,0,0.25);
+    background-blend-mode: darken;
+}

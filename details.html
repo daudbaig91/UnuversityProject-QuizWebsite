@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <!-- title and linking css  -->
+    <title>WEBDEV CREATIONS DETAILS</title>
+    <link rel="stylesheet"  href="detailscss.css">
+    <!-- icons for  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="all">
+ <!-- Task bar made by amreit, i have used to give a similar apperance, had to do a  lot of tweaks to my own css layout as it wasnt working out well with my css -->
+
+       <div class="main">
+            <div class="logo">
+                <a href="/html/main.html"><img src="imgs\logo.png"></a>
+            </div>
+            <ul>
+                <li><a href="/html/main.html">Home</a></li>
+                <li><a href="/html/query.html">Contact</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </div>
+
+
+
+ <!-- a div containing all card elements-->
+<div class="container">
+   <!-- 1 out of 4 card under the div repeated 4 to represent all 4 cards-->
+  <div class="card">
+    <img src="imgs/mrbean.jpg" class="cardimage">
+    <!--created a div with class namehide whichhides the name in the css unless when hoovered-->
+      	<div class="namehide">
+    	<p class="name">Daud Baig</p>
+    	<p class="role">Student 1</p>
+    	</div>
+       <!--for the sake of styling i have added some icons(which do not link to no where) the links of this icons are under the head section-->
+    <ul class="socialicons">
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+     <!--buttons for again some stling i gave a function to one button which just changed colour when he follows the person, do to time i have not been able to add more function such as to messages.-->
+    <button class="btn draw-border" onclick="this.style.backgroundColor = '#ffffff'" >Follow</button>
+    <button class="btn draw-border">Message</button>
+  </div>
+
+ <!--card2-->
+  <div class="card">
+    <img src="imgs/Lisa.jpg" class="cardimage">
+     <div class="namehide">
+    	<p class="name">Nur</p>
+    	<p class="role">Student 2</p>
+    </div>
+  
+    <ul class="socialicons">
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <button class="btn draw-border" onclick="this.style.backgroundColor = '#ffffff'" >Follow</button>
+    <button class="btn draw-border">Message</button>
+  </div>
+
+ <!--card 3-->
+  <div class="card">
+    <img src="imgs/bird.jpg" class="cardimage">
+   
+   <div class="namehide">
+    	<p class="name">Sofia Ahmed</p>
+    	<p class="role">Student 3</p>
+    </div>
+    <ul class="socialicons">
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <button class="btn draw-border" onclick="this.style.backgroundColor = '#ffffff'" >Follow</button>
+    <button class="btn draw-border">Message</button>
+  </div>
+
+ <!--card 4-->
+  <div class="card">
+    <img src="imgs/bart.jpg" class="cardimage">
+    <div class="namehide">
+    	<p class="name">Amrit</p>
+    	<p class="role">Student 4</p>
+    </div>
+    <ul class="socialicons">
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <button class="btn draw-border" onclick="this.style.backgroundColor = '#ffffff'" />Follow</button>
+    <button class="btn draw-border">Message</button>
+  </div>
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>WEBDEV CREATIONS quiz</title>
+    <link rel="stylesheet"  href="QuizStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>    <!-- Task bar |not mine| -->
+<header></header>
+        <div class="main">
+            <div class="logo">
+                <a href="/html/main.html"><img src="imgs\logo.png" width="200" height="200"></a>
+            </div>
+            <ul>
+                <li><a href="/html/main.html">Home</a></li>
+                <li><a href="/html/query.html">Contact/a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="details.html">Details</a></li>
+            </ul>
+        </div>
+    <!-- Task bar ending |not mine| -->
+
+
+    <!-- div element containing starting menu-->
+    <div id="hideStart" >
+        <div id="h1"><img src="imgs\earth1.png" class="centre"></img>
+            <h1 class="geoTitle"><strong>Geography Test</strong></h1>
+            <p class="geoText"><span>Let's see how much attention you in your Geography classes</span></p><br>
+            <button onclick="q1()" type="button" id="startB">Start</strong></button> Press Start ↵
+        </div> 
+    </div>
+    <!-- end of starting menu -->
+
+
+    <!-- q1 display -->
+  
+
+<div id="popupout">
+    <h1 id="quiztitle"><strong>QUIZ</strong></h1>
+    <button onclick="exit1()" type="button" class="btnclose"><i class="fa fa-close"></i></button>
+
+    <div id="popupin">
+        <div id="questionlay"> 
+            <h1 id="question1">From which city is this picture from?</h1>
+        </div>
+    <div id="Score"> 
+    <h3 id="Score1"><p id="paranswer1"></p><p id="paranswer2"></p><p></p></h3>
+    </div>
+
+    <div id="wronglay1"> 
+        <p id="wronganswer1"></p>
+
+    </div>
+
+
+     <div id="wronglay"> 
+            <p id="wronganswer"></p>
+    
+          
+        </div>
+
+    
+
+        <div id="popupcontent" >
+            <img id="image" > 
+            
+
+        </div>
+        <div id="answerlay">
+            
+            <label class="container"><p id="container1"></p>
+              <input id="rad1" type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"><p id="container2">as</p>
+              <input id="rad2" type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"><p id="container3">re</p>
+              <input id="rad3" type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"><p id="container4">qz</p>
+              <input id="rad4" type="radio" name="radio"></input>
+              <span class="checkmark"></span>
+            </label>      
+
+        </div>
+
+       <div id="timeralign">
+                <p id="timer"></p>
+
+        </div>
+
+        <div id ="containernext">
+            <button onclick="q2()" type="button" id="buttonnext">Submit</button>
+            <button onclick="q1()" type="button" id="buttonnext1">Next</button>
+        </div>
+
+        
+        
+            <div class="dotalign" >
+                  <span class="dot" id="1" style="background-color: #363442"></span> 
+                  <span class="dot" id="2"></span> 
+                  <span class="dot" id="3"></span> 
+                  <span class="dot" id="4"></span> 
+                  <span class="dot" id="5"></span> 
+                  <span class="dot" id="6"></span> 
+                  <span class="dot" id="7"></span> 
+                  <span class="dot" id="8"></span> 
+                  <span class="dot" id="9"></span> 
+                  <span class="dot" id="10"></span> 
+                </div>
+
+    </div>
+
+</div>
+
+    <script src="quizJs.js"></script>
+</body
+</html>
+    <!-- 
+
+
+.geoText{
+    
+    font-weight: 40;
+    font-size: 18px;
+    margin: -10px;}
+
+
+
+#hideStart{
+    margin: -6%;
+    text-align: center;
+}
+
+
+.buttonJoin{
+    
+}
+     -->
